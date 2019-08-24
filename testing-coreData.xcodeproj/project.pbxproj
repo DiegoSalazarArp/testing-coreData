@@ -14,6 +14,11 @@
 		C7BB69E12311B0DA00DB439F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BB69E02311B0DA00DB439F /* Assets.xcassets */; };
 		C7BB69E42311B0DA00DB439F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BB69E32311B0DA00DB439F /* Preview Assets.xcassets */; };
 		C7BB69E72311B0DA00DB439F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7BB69E52311B0DA00DB439F /* LaunchScreen.storyboard */; };
+		C7BB69F02311C15E00DB439F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB69EF2311C15E00DB439F /* CoreDataManager.swift */; };
+		C7BB69F32311C24700DB439F /* NSManagedObjectContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB69F22311C24700DB439F /* NSManagedObjectContext+Extension.swift */; };
+		C7BB69F62311C35C00DB439F /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB69F52311C35C00DB439F /* AddOrderViewModel.swift */; };
+		C7BB69F92311C3B900DB439F /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB69F82311C3B900DB439F /* AddOrderView.swift */; };
+		C7BB69FB2311D93D00DB439F /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB69FA2311D93D00DB439F /* OrderListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		C7BB69E32311B0DA00DB439F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C7BB69E62311B0DA00DB439F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7BB69E82311B0DA00DB439F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7BB69EF2311C15E00DB439F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C7BB69F22311C24700DB439F /* NSManagedObjectContext+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extension.swift"; sourceTree = "<group>"; };
+		C7BB69F52311C35C00DB439F /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
+		C7BB69F82311C3B900DB439F /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
+		C7BB69FA2311D93D00DB439F /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +68,12 @@
 		C7BB69D62311B0D600DB439F /* testing-coreData */ = {
 			isa = PBXGroup;
 			children = (
+				C7BB69F72311C39400DB439F /* Views */,
+				C7BB69F42311C34A00DB439F /* ViewModel */,
+				C7BB69F12311C23000DB439F /* Extension */,
+				C7BB69EE2311C14900DB439F /* Manage */,
 				C7BB69D72311B0D600DB439F /* AppDelegate.swift */,
 				C7BB69D92311B0D600DB439F /* SceneDelegate.swift */,
-				C7BB69DE2311B0D600DB439F /* ContentView.swift */,
 				C7BB69E02311B0DA00DB439F /* Assets.xcassets */,
 				C7BB69E52311B0DA00DB439F /* LaunchScreen.storyboard */,
 				C7BB69E82311B0DA00DB439F /* Info.plist */,
@@ -76,6 +89,40 @@
 				C7BB69E32311B0DA00DB439F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C7BB69EE2311C14900DB439F /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				C7BB69EF2311C15E00DB439F /* CoreDataManager.swift */,
+			);
+			path = Manage;
+			sourceTree = "<group>";
+		};
+		C7BB69F12311C23000DB439F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C7BB69F22311C24700DB439F /* NSManagedObjectContext+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C7BB69F42311C34A00DB439F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7BB69F52311C35C00DB439F /* AddOrderViewModel.swift */,
+				C7BB69FA2311D93D00DB439F /* OrderListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C7BB69F72311C39400DB439F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7BB69F82311C3B900DB439F /* AddOrderView.swift */,
+				C7BB69DE2311B0D600DB439F /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +197,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7BB69DD2311B0D600DB439F /* testing_coreData.xcdatamodeld in Sources */,
+				C7BB69F32311C24700DB439F /* NSManagedObjectContext+Extension.swift in Sources */,
 				C7BB69D82311B0D600DB439F /* AppDelegate.swift in Sources */,
+				C7BB69FB2311D93D00DB439F /* OrderListViewModel.swift in Sources */,
 				C7BB69DF2311B0D600DB439F /* ContentView.swift in Sources */,
+				C7BB69F02311C15E00DB439F /* CoreDataManager.swift in Sources */,
+				C7BB69F92311C3B900DB439F /* AddOrderView.swift in Sources */,
+				C7BB69F62311C35C00DB439F /* AddOrderViewModel.swift in Sources */,
 				C7BB69DA2311B0D600DB439F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
