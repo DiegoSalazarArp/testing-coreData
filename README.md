@@ -1,2 +1,2 @@
 # testing-coreData
-testing: app coffe orders using CoreData and SwiftUI
+testing: app de pedidos en SwiftUI utilizando CoreData.
